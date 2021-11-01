@@ -10,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and start development.
         </p>
+        <p>Initial Commit to test if it's working</p>
       </header>
     </div>
   );

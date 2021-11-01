@@ -1,18 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'semantic-ui-css/semantic.min.css'
+import { Divider, Container, Item, Input, Image } from 'semantic-ui-react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and start development.
-        </p>
-        <p>Initial Commit to test if it's working</p>
-      </header>
-    </div>
+    <>
+      <Divider hidden />
+      <Container>
+        <Input fluid action='Search' icon='search' iconPosition='left' placeholder='Companies, Organisations, People or Places...' />
+      </Container>
+      <Divider />
+      <Container>
+        <Item.Group divided>
+          <Item>
+            <Item.Content>
+              <Item.Header as='a'>Content Header</Item.Header>
+              <Item.Meta>
+                <span>Date</span>
+                <span>Category</span>
+              </Item.Meta>
+              <Item.Description>
+                A description which may flow for several lines and give context to the content.
+              </Item.Description>
+            </Item.Content>
+            <Item.Image src='/images/image.png' />
+          </Item>
+          <Item>
+            <Item.Content>
+              <Item.Header as='a'>Content Header</Item.Header>
+              <Item.Meta>
+                <span>Date</span>
+                <span>Category</span>
+              </Item.Meta>
+              <Item.Description>
+                A description which may flow for several lines and give context to the content.
+              </Item.Description>
+            </Item.Content>
+            <Item.Image src='/images/image.png' />
+          </Item>
+        </Item.Group>
+      </Container>
+    </>
   );
 }
 

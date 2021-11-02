@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Item } from 'semantic-ui-react';
 
-const SearchBar: React.FC = () => {
+const StoriesList: React.FC = () => {
   return (
     <Container>
       <Item.Group divided>
@@ -36,4 +36,4 @@ const SearchBar: React.FC = () => {
   );
 };
 
-export default SearchBar;
+export default StoriesList;

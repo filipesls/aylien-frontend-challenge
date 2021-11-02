@@ -1,46 +1,17 @@
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css'
-import { Divider, Container, Item, Input } from 'semantic-ui-react';
+import { Divider } from 'semantic-ui-react';
 import './App.css';
+import SearchBar from './components/SearchBar/SearchBar';
+import StoriesList from './components/Stories/StoriesList';
 
 function App() {
   return (
     <>
       <Divider hidden />
-      <Container>
-        <Input fluid action='Search' icon='search' iconPosition='left' placeholder='Companies, Organisations, People or Places...' />
-      </Container>
+      <SearchBar />
       <Divider />
-      <Container>
-        <Item.Group divided>
-          <Item>
-            <Item.Content>
-              <Item.Header as='a'>Content Header</Item.Header>
-              <Item.Meta>
-                <span>Date</span>
-                <span>Category</span>
-              </Item.Meta>
-              <Item.Description>
-                A description which may flow for several lines and give context to the content.
-              </Item.Description>
-            </Item.Content>
-            <Item.Image src='/images/image.png' />
-          </Item>
-          <Item>
-            <Item.Content>
-              <Item.Header as='a'>Content Header</Item.Header>
-              <Item.Meta>
-                <span>Date</span>
-                <span>Category</span>
-              </Item.Meta>
-              <Item.Description>
-                A description which may flow for several lines and give context to the content.
-              </Item.Description>
-            </Item.Content>
-            <Item.Image src='/images/image.png' />
-          </Item>
-        </Item.Group>
-      </Container>
+      <StoriesList />
     </>
   );
 }

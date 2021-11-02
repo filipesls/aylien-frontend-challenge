@@ -1,6 +1,6 @@
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css'
-import { Divider, Container, Item, Input, Image } from 'semantic-ui-react';
+import { Divider, Container, Item, Input } from 'semantic-ui-react';
 import './App.css';
 
 function App() {
